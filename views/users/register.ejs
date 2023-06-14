@@ -1,0 +1,30 @@
+<% layout('/layout/boilerplate') %>
+<div class="container d-flex justify-content-center align-items-center mt-5" >
+    <div class="row flex-fill">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+              <div class="card-body">
+                 <h5 class="card-title">Register to yelp camp</h5>
+                 <form action="/register" method="post" class="form-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="Email">Enter Email</label>
+                        <input class="form-control" type="email" name="Email" id="Email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Username">Enter Username</label>
+                        <input class="form-control" type="text" name="Username" id="Username" placeholder="Enter username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Password">Enter Password</label>
+                        <input class="form-control" type="password" name="Password" id="Password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-success btn-block">submit</button>
+                    </div>
+                </form>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
